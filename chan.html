@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TO DO APP</title>
+</head>
+
+<body>
+
+<h1>TO DO LIST</h1>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+<button id="addBtn">Add Task</button>
+
+<ul id="taskList"></ul>
+
+<script>
+const button = document.getElementById("addBtn");
+const input = document.getElementById("taskInput");
+const list = document.getElementById("taskList");
+
+function savetasks(){
+    const tasks = [];
+    list.querySelectorAll("li").forEach(function(li) {
+        tasks.push(li.firstChild.textContent);
+    });
+
+    localStorage.setItem("myTasks", JSON.stringify(tasks));
+
+}
+
+
+button.addEventListener("click", function() {
+    const taskText = input.value.trim();
+
+    if(taskText === "") {
+        alert("ENTER YOUR TASK FIRST");
+        return; 
+    }
+
+    { alert("task added"); }
+    
+    
+     
+function addTaskToScreen(taskText){
+
+    const li = document.createElement("li");
+    li.textContent = taskText;
+
+    li.addEventListener("click", function() {
+        li.style.textDecoration = "line-through";
+    });
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "❌";
+
+    deleteBtn.addEventListener("click", function(event) {
+        event.stopPropagation();
+        li.remove();
+    });
+
+    li.appendChild(deleteBtn);
+    list.appendChild(li);
+    
+
+
+input.addEventListener("keydown", function(event) {
+    if(event.key === "Enter") {
+        button.click();
+    }
+});
+
+
+</script>
+
+</body>
+</html>
