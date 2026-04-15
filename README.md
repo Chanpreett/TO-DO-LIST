@@ -11,8 +11,6 @@ A simple To Do List app built with HTML, CSS and JavaScript.
 
 ## Upcoming Features
 - 🔄 CSS Styling
-- 🔄 Filter tasks (All / Pending / Done)
-- 🔄 Priority badges (High / Med / Low)
 - 🔄 Due dates
 - 🔄 Progress bar
 
