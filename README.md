@@ -1,24 +1,38 @@
-# TO-DO LIST APP 📝
+# 📝 To-Do List App
 
 A simple To Do List app built with HTML, CSS and JavaScript.
 
-## Features
-- ✅ Add tasks
-- ✅ Delete tasks
-- ✅ Strike through completed tasks
-- ✅ Enter key support
-- ✅ Local Storage (tasks saved after refresh)
+## ✨ Features
 
-## Upcoming Features
-- 🔄 CSS Styling
-- 🔄 Day & Night Mode
-- 🔄 Progress bar
+- ✅ Add Tasks
+- ✅ Delete Tasks
+- ✅ Mark Tasks as Completed
+- ✅ Enter Key Support
+- ✅ Local Storage Support
+- ✅ Progress Bar
+- ✅ Day & Night Mode
 
-## Tech Used
-- HTML
-- CSS
+
+## 🚀 Live Demo
+
+🔗 **Live Demo:** https://chanpreett.github.io/TO-DO-LIST/chan.html
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
 - JavaScript
 
-## Built by
-Chanpreett
-GitHub: github.com/Chanpreett
+
+## 👨‍💻 Developer
+
+**Chanpreet Singh**
+- 🎓 GTBIT, Delhi
+- 🚀 Aspiring Full Stack Developer
+
+
+---
+
+⭐ If you like this project, don't forget to star the repository!
+
+Happy Coding 🚀
